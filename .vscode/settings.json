@@ -1,0 +1,13 @@
+// 为了统一团队的 vscode 配置，我们可以在项目的根目录下建立.vscode目录，在里面放置一些配置内容
+{
+  //下边我们会配置editor.codeActionsOnSave，所以这里我们可以关闭 editor.formatOnSave，否则我们的文件将被修复两次
+  "editor.formatOnSave": false,
+  // 默认使用prettier格式化支持的文件
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 每次保存的时候将代码按eslint格式进行修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  //让eslint显示在右下角，点击可观察插件运行是否有问题
+  "eslint.alwaysShowStatus": true,
+}

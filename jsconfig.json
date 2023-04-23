@@ -1,0 +1,16 @@
+// jsconfig.json源于tsconfig.json，是TypeScript的配置文件。
+// jsconfig.json相当于tsconfig.json的“allowJs”属性设置为true
+{
+	"target": "es5",
+	"allowJs": true,
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM"],
+		"baseUrl": "./",
+		"paths": {
+			// 解决项目中使用@作为路径别名，导致vscode无法跳转文件的问题
+			"@/*": ["src/*"]
+		}
+	},
+	"exclude": ["node_modules"],
+	"include": ["src/**/*"]
+}
